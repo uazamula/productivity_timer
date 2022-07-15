@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Work Timer',
-      theme: ThemeData(primarySwatch: Colors.blueGrey),
+      // theme: ThemeData(primarySwatch: Colors.blueGrey),
       home: TimerHomePage(),
     );
   }
