@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My Work Timer',
       // theme: ThemeData(primarySwatch: Colors.blueGrey),
       home: TimerHomePage(),
@@ -102,11 +103,11 @@ class TimerHomePage extends StatelessWidget {
                         ? TimerModel('00:00', 1)
                         : snapshot.data;
                 return CircularPercentIndicator(
-                  radius: availableWidth / 2,
-                  lineWidth: 10.0,
+                  radius: availableWidth / 4,
+                  lineWidth: 20.0,
                   percent: timer.percent,
                   center: Text( timer.time,
-                      style: Theme.of(context).textTheme.headline4),
+                      style: Theme.of(context).textTheme.headline2),
                   progressColor: Color(0xff009688),
                 );
                 // } else {
